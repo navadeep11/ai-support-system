@@ -1,3 +1,5 @@
 import { hc } from "hono/client";
 
-export const client = hc("http://localhost:4000");
+const API_URL = import.meta.env.VITE_API_URL;
+
+export const client = hc(API_URL);
