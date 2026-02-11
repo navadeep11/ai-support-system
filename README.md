@@ -37,18 +37,6 @@ The architecture follows a clean separation of concerns:
 
 ---
 
-## 📁 Monorepo Structure
-
-root/
-│
-├── apps/
-│   ├── backend/
-│   └── frontend/
-│
-└── README.md
-
----
-
 # 🖥 Backend (Hono + Prisma + Groq)
 
 Location:
@@ -165,29 +153,6 @@ Global middleware handles:
 Ensures consistent JSON error responses.
 
 ---
-
-# 🔄 Example Flow
-
-User → ChatBox.jsx
-      ↓
-rpc/client.js
-      ↓
-chat.rpc.ts
-      ↓
-chat.service.ts
-      ↓
-router.agent.ts (Groq)
-      ↓
-order.agent.ts / billing.agent.ts / support.agent.ts
-      ↓
-conversation.tool.ts
-      ↓
-Prisma
-      ↓
-PostgreSQL
-
----
-
 
 
 
