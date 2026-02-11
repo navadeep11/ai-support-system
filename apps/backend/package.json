@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch src --exec tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "seed": "tsx src/db/seed.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/groq": "^3.0.22",
+    "@hono/node-server": "^1.19.9",
+    "@prisma/client": "^6.19.2",
+    "ai": "^6.0.77",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "hono": "^4.11.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "prisma": "^6.19.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.9.3"
+  }
+}
