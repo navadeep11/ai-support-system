@@ -52,9 +52,9 @@ Tech Stack:
 
  Environment Variables (.env inside apps/backend):
 
-# DATABASE_URL="postgresql://user:password@host:5432/db"
-# GROQ_API_KEY="your_groq_key"
-# NODE_ENV=development
+```DATABASE_URL="postgresql://user:password@host:5432/db"```
+```GROQ_API_KEY="your_groq_key"```
+``` NODE_ENV=development```
 
 Database Setup:
 
